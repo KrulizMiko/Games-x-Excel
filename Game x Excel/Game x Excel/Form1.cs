@@ -1,6 +1,3 @@
-using Microsoft.VisualBasic.Logging;
-using System.Data;
-
 namespace Game_x_Excel
 {
     public partial class Form1 : Form
@@ -50,6 +47,22 @@ namespace Game_x_Excel
         private void cls_Click(object sender, EventArgs e)
         {
             this.dataGridView1.Rows.Clear();
+        }
+
+        private void summ_Click(object sender, EventArgs e)
+        {
+            int game0 = 0;
+            int game1 = 0;
+            int game2 = 0;   
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+             //цикл фор суммирует каждый заполненный столбец 
+             game0 += Convert.ToInt32(dataGridView1.Rows[i].Cells[1].Value);
+             game1 += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
+             game2 += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
+            }                    
+            AddRow("Итог", $"{game0}", $"{game1}", $"{game2}");
+     
         }
     }
 }

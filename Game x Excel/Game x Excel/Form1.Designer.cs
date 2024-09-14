@@ -81,6 +81,7 @@
             summ.TabIndex = 1;
             summ.Text = "Расчитать";
             summ.UseVisualStyleBackColor = false;
+            summ.Click += summ_Click;
             // 
             // aaddd
             // 
