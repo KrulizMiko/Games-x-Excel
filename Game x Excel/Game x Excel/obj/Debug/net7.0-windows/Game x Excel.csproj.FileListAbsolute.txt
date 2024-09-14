@@ -1,0 +1,32 @@
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.exe
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.deps.json
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.runtimeconfig.json
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.dll
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.pdb
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game_x_Excel.Form1.resources
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.csproj.GenerateResource.cache
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.AssemblyInfoInputs.cache
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.AssemblyInfo.cs
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.csproj.CoreCompileInputs.cache
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.dll
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\refint\Game x Excel.dll
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.pdb
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.genruntimeconfig.cache
+C:\Users\Student2\source\repos\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\ref\Game x Excel.dll
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.exe
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.deps.json
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.runtimeconfig.json
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.dll
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\bin\Debug\net7.0-windows\Game x Excel.pdb
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game_x_Excel.Form1.resources
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.csproj.GenerateResource.cache
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.AssemblyInfoInputs.cache
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.AssemblyInfo.cs
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.csproj.CoreCompileInputs.cache
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.dll
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\refint\Game x Excel.dll
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.pdb
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\Game x Excel.genruntimeconfig.cache
+C:\Users\артём\OneDrive\Рабочий стол\Game x Excel\Game x Excel\obj\Debug\net7.0-windows\ref\Game x Excel.dll
