@@ -9,7 +9,7 @@ namespace Game_x_Excel
         {
             InitializeComponent();
 
-            
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -44,61 +44,87 @@ namespace Game_x_Excel
 
         private void dataGridView23()
         {
-         dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void cls_Click(object sender, EventArgs e)
         {
             this.dataGridView1.Rows.Clear();
-            // Сбрасываем выделение всех столбцов
+            // Очищаем выделение предыдущего столбца
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
-                column.DefaultCellStyle.BackColor = Color.White; // Цвет по умолчанию
+                column.DefaultCellStyle.BackColor = Color.White; // Или другой цвет по умолчанию
             }
 
         }
 
         private void summ_Click(object sender, EventArgs e)
-        { 
-            int game0 = 0;
-            int game1 = 0;
-            int game2 = 0;   
+        {
+            // Переменные для хранения текущих значений
+            int game0 = 0; // Сумма для первого столбца
+            int game1 = 0; // Сумма для второго столбца
+            int game2 = 0; // Сумма для третьего столбца
+
+            // Суммируем значения
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[1].Value != null && int.TryParse(row.Cells[1].Value.ToString(), out int value0))
+                    game0 += value0;
+
+                if (row.Cells[2].Value != null && int.TryParse(row.Cells[2].Value.ToString(), out int value1))
+                    game1 += value1;
+
+                if (row.Cells[3].Value != null && int.TryParse(row.Cells[3].Value.ToString(), out int value2))
+                    game2 += value2;
+            }
+
+            // Найдем индекс строки "Итог"
+            int totalRowIndex = -1;
+
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
-             //цикл фор суммирует каждый заполненный столбец 
-             game0 += Convert.ToInt32(dataGridView1.Rows[i].Cells[1].Value);
-             game1 += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
-             game2 += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
-                
-            }   
-            AddRow("Итог", $"{game0}", $"{game1}", $"{game2}");
+                if (dataGridView1.Rows[i].Cells[0].Value != null &&
+                    dataGridView1.Rows[i].Cells[0].Value.ToString() == "Итог")
+                {
+                    totalRowIndex = i;
+                    break;
+                }
+            }
+
+            // Если строка "Итог" уже существует, обновляем значения
+            if (totalRowIndex != -1)
+            {
+                // Обновляем значения на основе текущих сумм
+                dataGridView1.Rows[totalRowIndex].Cells[1].Value = game0.ToString();
+                dataGridView1.Rows[totalRowIndex].Cells[2].Value = game1.ToString();
+                dataGridView1.Rows[totalRowIndex].Cells[3].Value = game2.ToString();
+            }
+            else
+            {
+                // Добавляем строку итогов, если её нет
+                AddRow("Итог", game0.ToString(), game1.ToString(), game2.ToString());
+            }
 
             // Находим столбец с максимальным суммарным значением
-            int maxColumnIndex = 0;
-            double maxValue = 0;
-            //цикл считает стлобцы в индекс
-            for (int columnIndex = 0; columnIndex < dataGridView1.Columns.Count; columnIndex++)
+            int maxColumnIndex = 1; // Начинаем с первого столбца для игр
+            double maxValue = game0; // Инициализируем с первой суммой
+
+            double[] sums = new double[] { game0, game1, game2 };
+
+            // Нахождение максимального значения и его индекса
+            for (int i = 1; i < sums.Length; i++)
             {
-                // Суммируем значения в столбце
-                double sum = 0;
-                //цикл считает строку в индекс
-                for (int rowIndex = 0; rowIndex < dataGridView1.Rows.Count; rowIndex++)
+                if (sums[i] > maxValue)
                 {
-                    var cellValue = dataGridView1.Rows[rowIndex].Cells[columnIndex].Value;
-
-                    // Преобразуем значение в ячейке в число
-                    if (cellValue != null && double.TryParse(dataGridView1.Rows[rowIndex].Cells[columnIndex].Value.ToString(), out double value))
-                    {
-                        sum += value;
-                    }
+                    maxValue = sums[i];
+                    maxColumnIndex = i + 1; // Плюсуем 1, так как sums соответствует индексам в ячейках
                 }
+            }
 
-                // Если сумма больше текущего максимального значения, обновляем максимум
-                if (sum > maxValue)
-                {
-                    maxValue = sum;
-                    maxColumnIndex = columnIndex;
-                }
+            // Сброс цвета для всех столбцов
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.DefaultCellStyle.BackColor = Color.White;
             }
 
             // Выделяем столбец с максимальным значением
